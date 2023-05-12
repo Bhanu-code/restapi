@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node backend/index.js",
-    "server": "nodemon backend/index.js"
+    "server": "nodemon backend/index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Bhanu",
   "license": "ISC",
