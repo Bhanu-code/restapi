@@ -8,7 +8,7 @@ const connectDB = async ()=>{
         })
         console.log(`db connected ${conn.connection.host}`)
     } catch(error){
-        console.log('connection failed')
+        console.log('connection failed!')
         console.log(error)
         process.exit(1)
     }
